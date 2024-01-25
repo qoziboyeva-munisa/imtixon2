@@ -1,0 +1,462 @@
+/* jost-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/jost-v15-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* jost-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/jost-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* jost-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/jost-v15-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* jost-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/jost-v15-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.navbar{
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    background-color: aliceblue;
+}
+.navbar__container{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar__list{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    width: 300px;
+}
+.navbar__item{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.navbar__link{
+    text-decoration: none;
+    color: #333136;
+    font-family: 'Jost',sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 2px;
+    color: #333136;
+}
+.navbar__link:hover{
+    color: #fff;
+    background-color: black;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+/* ---------------------------------------header-------------------------------- */
+.header{
+    padding-top: 100px;
+}
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 3;
+    height: 550px;
+    border-radius: 15px;
+    background: #E7816B;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.header__oval{
+    z-index: -1;
+    position: absolute;
+    right: 0;
+}
+.header__img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.header__box{
+    width: 500px;
+    height: 600px;
+    padding-top: 70px;
+    padding-left: 50px;
+}
+.header__title{
+    color: #FFF;
+    font-family: 'Jost',sans-serif;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 45px;
+}
+.header__text{
+    color: #FFF;
+    font-family: 'Jost',sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 30px;
+}
+.header__btn{
+    color: #333136;
+    font-family: 'Jost',sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 0px;
+    border-radius: 5px;
+}
+.header__btn:hover{
+    background: linear-gradient(#000, #fff, blue);
+}
+/* ------------------------------------------hero------------------------------------- */
+
+.hero__container{
+    /* background-image: url(../img/Rectangle.svg);
+    background-repeat: no-repeat;
+    background-size: 990px, 500px;
+    background-position-x: -60px;
+    background-position-y: -200px; */
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0px;
+    position: relative;
+    z-index: 1;
+}
+.hero__img{
+    position: absolute;
+    top: -300px;
+    left: -200px;
+    z-index: -1;
+}
+.hero__box{
+    border-radius: 15px;
+    background: #000;
+    padding-top: 200px;
+    width: 480px;
+    height: 530px;
+    background-image: url(../img/Bitmap\ \(4\).png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.hero__box:hover{
+    filter: brightness(3);
+    }
+
+.hero__title{
+    padding: 10px 0px;
+    text-align: center;
+    color: #FFF;
+    font-family: 'Jost',sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: 2px;
+}
+.hero__text{
+    text-align: center;
+    color: #FFF;
+    font-family: 'Jost',sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.hero__list{
+    display: flex;
+    flex-direction: column;
+}
+.hero__item{
+    padding-top: 60px;
+    margin-bottom: 15px;
+    list-style: none;
+    border-radius: 15px;
+    background: #000;
+    width: 500px;
+    height: 250px;
+    background-image: url(../img/Bitmap.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.hero__item:hover{
+    filter: brightness(3);
+}
+
+.hero__item__too{
+    padding-top: 60px;
+    margin-top: 15px;
+    list-style: none;
+    border-radius: 15px;
+    background: #000;
+    width: 500px;
+    height: 250px;
+    background-image: url(../img/Bitmap\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.hero__wrapper{
+    display: flex;
+}
+.hero__item__too:hover{
+    filter: brightness(3);
+}
+ 
+/* ---------------------------------------------------main--------------------------------- */
+
+.main__container{
+    z-index:5 ;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 300px;
+}
+.main__fon{
+    z-index: -1;
+    right: 0;
+    width: 700px;
+    height: 450px;
+    position: absolute;
+    bottom: 0;
+}
+.main__list{
+    display: flex;
+    justify-content: space-between;
+}
+.main__item{
+    text-align: center;
+    list-style: none;
+    width: 340px;
+}
+.main__title{
+    z-index: 5;
+    color: #333136;
+    text-align: center;
+    font-family: 'Jost',sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 5px;
+}
+.main__text{
+    color: #333136;
+    text-align: center;
+    font-family: 'Jost',sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.main__img:hover{
+    animation-name: hero__img__anim;
+    animation-duration: 1s;
+    /* animation-iteration-count: infinite; */
+    animation-timing-function: linear;
+    transition: 0.3s;
+}
+@keyframes hero__img__anim{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/* ----------------------------------------pricing--------------------------------- */
+.pricing{
+    z-index: 5;
+    position: relative;
+}
+.pricing__container{
+    position: absolute;
+    top: -230px;
+    right: 0;
+    left: 0;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    background: #E7816B;
+}
+.pricing__img{
+    position: absolute;
+    top: 0;
+    right: 250px;
+}
+.pricing__oval{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    }
+.pricing__oval__copy{
+    position: absolute;
+    bottom: 0;
+    right: 500px;
+}
+.pricing__oval__copy1{
+    position: absolute;
+    bottom: 0;
+    right: 250px;
+    }
+.pricing__oval__copy2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+.pricing__title{
+    color: #FFF;
+    font-family: 'Jost',sans-serif;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+}
+.pricing__text{
+    width: 400px;
+    color: #FFF;
+    font-family: 'Jost',sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+.pricing__btn{
+    position: absolute;
+    z-index: 1;
+    right: 70px;
+    background-color: #fff;
+    padding: 10px 12px;
+    border: 0px;
+    border-radius: 6px;
+    color: #333136;
+    font-family: 'Jost',sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.pricing__btn:hover{
+    background: linear-gradient(#333136, #E7816B, #FFF);
+}
+/* -------------------------------------------------ending-------------------------- */
+
+.ending{
+    background: #1D1C1E;
+}
+.ending__container{
+    padding: 100px 0px;
+}
+.ending__box{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.ending__list{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.ending__item{
+    list-style: none;
+}
+.ending__link{
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Jost',sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 2px;
+}
+.ending__link:hover{
+    padding: 6px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #000;
+}
+hr{
+
+    border: 1px solid #353434;
+    background-color: #25212c;
+}
+.ending__item__name{
+    list-style: none;
+}
+.ending__list__name{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.ending__text{
+    color: #FFF;
+    font-family: 'Jost',sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; 
+    opacity: 0.5;
+}
+.ending__img{
+    padding-top: 55px;
+}
+.ending__img:hover{
+    animation-name: hero__img__anim;
+    animation-duration: 1s;
+    /* animation-iteration-count: infinite; */
+    animation-timing-function: linear;
+    transition: 0.3s;
+}
+@keyframes hero__img__anim{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
